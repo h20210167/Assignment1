@@ -26,7 +26,7 @@ static int adc_open(struct inode *i,struct file *f)
 
 	{
 		
-		printk(KERN_INFO "Driver: open()\n");
+		printk(KERN_INFO "Driver: open\n");
 		return 0;
 	}
 
@@ -35,7 +35,7 @@ static int adc_close(struct inode *i,struct file *f)
 	
 	{
 		
-		printk(KERN_INFO "Driver: close()\n");
+		printk(KERN_INFO "Driver: close\n");
 		return 0;
 
 	}
