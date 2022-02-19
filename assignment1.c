@@ -50,13 +50,13 @@ static ssize_t adc_read(struct file *f, char __user *buf, size_t len, loff_t *of
     		a = rgenerate();
 		printk(KERN_INFO " random number is %d",a);
 		
-		if(allign == 'l')
+		if(allign == 'l' || allign = 'L')
 		{									
 			a = a * 16;	// shifting the no. left 4 times			
 		}
 		
 		
-		if(allign == '4')
+		if(allign == 'r' || allign == 'R')
 		{									
 			a = a / 16;	// shifting the no. right 4 times			
 		}
